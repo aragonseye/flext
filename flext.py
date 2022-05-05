@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 
-from PyQt6.QtCore import *
-from PyQt6.QtGui import *
-from PyQt6.QtWidgets import *
+from PyQt6.QtGui import QAction, QIcon, QFont
+from PyQt6.QtWidgets import QApplication, QWidget,  QMenuBar, QMainWindow, QTextEdit
 import sys
 
 
@@ -56,6 +55,10 @@ class textBox():
 
 		t = QTextEdit(target)
 		t.setFixedSize(500,500) 
+		t.setTabStopDistance(8)
+		t.setFont(QFont("Courier New", 18))
+		t.setAcceptRichText(False)
+		t.toPlainText()
 
 app = QApplication(sys.argv)
 w = mainWindow()
