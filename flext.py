@@ -5,12 +5,13 @@ from PyQt6.QtGui import QAction, QIcon, QFont
 from PyQt6.QtWidgets import QApplication, QWidget,  QMenuBar, QMainWindow, QTextEdit
 import sys
 
+# main window class
 
 class mainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 
-		self.setWindowTitle("Pee Editor")
+		self.setWindowTitle("Flext Editor")
 		self.resize(500,500)
 
 		# menubar 
@@ -57,7 +58,7 @@ class textBox():
 		t.setFixedSize(500,500) 
 		t.setTabStopDistance(8)
 		t.setFont(QFont("Courier New", 18)) # hard-fixed the font
-		t.setAcceptRichText(False)
+		t.setAcceptRichText(False) 
 		t.toPlainText()
 
 app = QApplication(sys.argv)
