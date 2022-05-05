@@ -56,7 +56,7 @@ class textBox():
 		t = QTextEdit(target)
 		t.setFixedSize(500,500) 
 		t.setTabStopDistance(8)
-		t.setFont(QFont("Courier New", 18))
+		t.setFont(QFont("Courier New", 18)) # hard-fixed the font
 		t.setAcceptRichText(False)
 		t.toPlainText()
 
